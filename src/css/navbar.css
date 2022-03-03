@@ -1,3 +1,106 @@
+:root {
+  --search-bg: #eee;
+  --search-button-color: #767676;
+  --search-button-color-soft: #b1b1b1;
+}
+
+a {
+  color: #767676;
+}
+
 .navbar {
-  background-color: red;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+}
+
+/* Start Search Bar */
+.search-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--search-bg);
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  border: 1px solid var(--search-bg);
+}
+
+.search-form:hover {
+  border: 1px solid var(--search-button-color-soft);
+}
+
+.search-form:focus-within {
+  border: 1px solid var(--search-button-color);
+}
+
+.search-form svg {
+  font-size: 20px;
+  color: var(--search-button-color);
+}
+
+.search-form button {
+  background-color: var(--search-bg);
+  border: none;
+  color: var(--search-button-color);
+}
+
+.searchField {
+  flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.search {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--search-bg);
+}
+
+.search:focus,
+input:focus {
+  outline: none;
+}
+
+/* End Search Bar */
+
+/* Start Action Buttons */
+.actionButtons {
+  padding-left: 20px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.actionButtons > button {
+  font-size: 14px;
+  padding: 20px 12px;
+  border: none;
+  background-color: transparent;
+  color: #767676;
+}
+
+.actionButtons .submitButton {
+  border: 0.5px solid #767676;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.actionButtons .menuButton svg {
+  font-size: 25px;
+}
+/* End Action Buttons */
+
+.vertical-line {
+  background-color: #d1d1d1;
+  height: 32px;
+  width: 1px;
 }
