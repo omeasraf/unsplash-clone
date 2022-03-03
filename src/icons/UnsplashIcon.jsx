@@ -3,7 +3,6 @@ const UnsplashIcon = () => {
     <svg
       width="32"
       height="32"
-      class="hic6U"
       viewBox="0 0 32 32"
       version="1.1"
       aria-labelledby="unsplash-home"

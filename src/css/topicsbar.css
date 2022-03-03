@@ -1,0 +1,87 @@
+/* Custom ScrollBar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* End of Custom ScrollBar */
+
+.container {
+  margin-top: 16px;
+  position: sticky;
+  z-index: 2;
+  height: 56px;
+}
+
+.topicsbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 4px 8px #00000014, 0 1px 1px #0100001a;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.vertical-line {
+  background-color: #d1d1d1;
+  height: 32px;
+  width: 1px;
+}
+
+.edTopic {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.L_F0b {
+  position: relative;
+}
+
+.WZ4Xc {
+  position: absolute;
+  top: -16px;
+}
+.HmGUP {
+  color: #767676;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.KHq0c {
+  font-weight: 500;
+}
+
+div.allTopics {
+  flex-grow: 1;
+  min-width: 0;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+div.allTopics a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.allTopics a:hover {
+  color: rgb(34, 34, 34);
+  transition: all 0.2s ease-in;
+}
+
+.edTopic.active {
+  color: #042e3a;
+  border-bottom: 1px solid #042e3a;
+  transition: all 0.5s ease-in;
+}
+
+.topic.active {
+  color: #042e3a;
+  border-bottom: 1px solid #042e3a;
+  transition: all 0.5s ease-in;
+}
