@@ -12,3 +12,8 @@ export var getRandomImage = (count, orientation) => {
   var link = `${url}photos/random${apiSlug}&per_page=${count}&orientation=${orientation}`;
   return axios.get(link);
 };
+
+export var getPhotos = (count, page) => {
+  var link = `${url}photos${apiSlug}&per_page=${count}&page=${page}&order_by=latest`;
+  return axios.get(link);
+};

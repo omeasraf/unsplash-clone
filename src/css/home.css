@@ -80,3 +80,76 @@
 .trendingTopics ul li:last-child:after {
   content: "";
 }
+
+.masonryview {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.masonryImage {
+  position: relative;
+}
+
+.masonry_buttons {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.masonry_buttons:hover {
+  /* display: block;*/
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.masonry_buttons .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.masonry_buttons .top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.masonry_buttons .bottom > .profile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+
+.masonry_buttons .bottom > .profile > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.masonry_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
