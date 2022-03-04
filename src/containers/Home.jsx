@@ -6,7 +6,7 @@ import "../css/home.css";
 const Home = () => {
   const [allTopics, setAllTopics] = useState();
   useEffect(() => {
-    getTopics()
+    getTopics(30, "latest")
       .then((data) => {
         setAllTopics(data.data);
       })

@@ -19,6 +19,7 @@
   align-items: center;
   display: flex;
   margin-bottom: 0;
+  height: 100%;
 }
 
 .vertical-line {
@@ -30,9 +31,10 @@
 .edTopic {
   display: inline-block;
   text-align: center;
-  padding: 14px;
+  padding: 20px;
   margin-right: 10px;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 .L_F0b {
@@ -65,7 +67,7 @@ div.allTopics {
 div.allTopics a {
   display: inline-block;
   text-align: center;
-  padding: 14px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -77,11 +79,15 @@ div.allTopics a:hover {
 .edTopic.active {
   color: #042e3a;
   border-bottom: 1px solid #042e3a;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.topic {
+  border-bottom: 1px solid transparent;
 }
 
 .topic.active {
   color: #042e3a;
   border-bottom: 1px solid #042e3a;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }

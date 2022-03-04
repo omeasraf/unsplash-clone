@@ -3,7 +3,12 @@ import axios from "axios";
 const url = "https://api.unsplash.com/";
 const apiSlug = `?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`;
 
-export var getTopics = () => {
-  var topics = `${url}topics${apiSlug}&per_page=30`;
+export var getTopics = (count, order_by) => {
+  var topics = `${url}topics${apiSlug}&per_page=${count}&order_by=${order_by}`;
   return axios.get(topics);
+};
+
+export var getRandomImage = (count, orientation) => {
+  var link = `${url}photos/random${apiSlug}&per_page=${count}&orientation=${orientation}`;
+  return axios.get(link);
 };
